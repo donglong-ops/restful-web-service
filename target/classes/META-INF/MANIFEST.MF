@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: CRUD-Restfull
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Dong Long
+Implementation-Vendor-Id: com.restfulapi
+Build-Jdk: 1.8.0_301
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/CRUD-Restfull
+Created-By: Maven Integration for Eclipse
+
