@@ -23,7 +23,7 @@ public class MainRESTController {
     @RequestMapping("/") // nó nhận request URL từ client, để nó biết gọi API nào
     @ResponseBody  // sau khi nhận data vao, lưu xuống, trả dữ liệu về cho client dưới định dạng json, nó parse chuyển đổi từ DTO sang json
     public String welcome() {
-        return "Welcome to RestTemplate Example.";
+        return "Welcome to RestAPI Example.";
     }
     
     // Get all method

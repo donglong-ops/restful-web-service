@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -31,8 +32,9 @@ public class User {
     }
  
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-        public long getId() {
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public int getId() {
         return id;
     }
     public void setId(int id) {
@@ -66,7 +68,7 @@ public class User {
 		this.password = password;
 	}
 
-	@Column(name = "avatar", nullable = false)
+	@Column(name = "avatar", nullable = true)
 	public String getAvatar() {
 		return avatar;
 	}
@@ -75,7 +77,7 @@ public class User {
 		this.avatar = avatar;
 	}
 
-	@Column(name = "phone", nullable = false)
+	@Column(name = "phone", nullable = true)
 	public String getPhone() {
 		return phone;
 	}
@@ -84,7 +86,7 @@ public class User {
 		this.phone = phone;
 	}
 
-	@Column(name = "address", nullable = false)
+	@Column(name = "address", nullable = true)
 	public String getAddress() {
 		return address;
 	}
